@@ -1,0 +1,73 @@
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.input {
+    width: 400px;
+    background: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 24px 16px;
+
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #A2A2A2;
+    transition: all 0.2s ease;
+
+    outline: none;
+}
+
+label {
+    /* display: none; */
+    position: absolute;
+    top: 28px;
+    left: 16px;
+    color: #A2A2A2;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+
+}
+
+.input:hover,
+.input:active,
+.input:focus {
+    border-color: #A2A2A2;
+}
+
+/* .toggle input[type=checkbox]:disabled + .toggle-switch {
+	border-color: #A2A2A2;
+} */
+
+.input:focus + label {
+    top: 15px;
+    text-transform: uppercase;
+}
+
+.input:active,
+.input:focus {
+    padding-top: 36px;
+    padding-bottom: 12px;
+    color: #140E17;
+}
+
+.input:disabled {
+    background-color: #EEEEEE;
+    color: #737373;
+}
+
+.clear-btn {
+    display: block;
+
+    width: 24px;
+    height: 24px;
+    background-image: url("../../images/clear-input.svg");
+    background-position: center;
+    background-size: contain;
+    margin-left: 12px;
+}
+

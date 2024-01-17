@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="../sidebar/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../sidebar/css/bootstrap-datetimepicker.min.css" />
+    <link rel="stylesheet" href="sidebar/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Collective Live</title>
+</head>
+<body>
+    <section class="hero">
+        <div class="background">
+            <div class="header">
+                <div class="logo"></div>
+                <nav class="nav-menu">
+                    <li class="nav-menu__item dropdown"><a href="#">Projects</a></li>
+                    <li class="nav-menu__item"><a href="#">How it works</a></li>
+                    <li class="nav-menu__item"><a href="#">Who it's for</a></li>
+                    <li class="nav-menu__item"><a href="#">Pricing</a></li>
+                    <li class="nav-menu__item"><a href="#">Why us</a></li>
+                    <li class="nav-menu__item"><a href="#">Blog</a></li>
+                    <li class="nav-menu__item dropdown"><a href="#">More</a></li>
+                </nav>
+                <div class="info">
+                    <a href="#" class="signup-link" onclick="onSignButtonClick('SIGN_UP')">Sign Up</a>
+                    <a href="#" class="login-link" onclick="onSignButtonClick('SIGN_IN')">Login</a>
+                </div>
+            </div>
+            <div class="content">
+                <h2>CollectiveWEB New reality for your business</h2>
+                <p class="text">
+                    Welcome to metaverse designed to connect, create,
+                    collaborate and celebrate in entirely new way.
+                </p>
+                <div class="hero-container">
+                    <a href="#sidebar" class="link">book a demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Book a demo form -->
+    <div id="sidebar" class="sidebar">
+        <a href="#case" class="sidebar__area"></a>
+        <div class="sidebar__body">
+            <div class="sidebar__content">
+                <div class="sidebar__container">
+                    <h2>Book a demo</h2>
+                    <a href="#case" class="close-btn"></a>
+                </div>
+                <h4>Personal info</h4>
+                <form action="" method="get" class="formWithValidation">
+                    <div class="sidebar__form">
+                        <input class="input" type="text" placeholder="" name="Name" required>
+                        <label for="input" class="name">Name</label>
+                        <input class="input" type="text" placeholder="" name="Email" required>
+                        <label for="input" class="email">Email</label>
+                        <div class="data-time">
+                            <div class="form-group">
+                                <div class="input-group date" id="datetimepicker1">
+                                    <input type="text" class="form-control" placeholder="Date"/>
+                                    <span class="input-group-addon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <mask id="mask0_216_4407" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="1" y="1" width="22" height="22">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7 1C7.55228 1 8 1.44772 8 2V3.5H16V2C16 1.44772 16.4477 1 17 1C17.5523 1 18 1.44772 18 2V3.5H20C21.6569 3.5 23 4.84315 23 6.5V19.5C23 21.1569 21.6569 22.5 20 22.5H4C2.34315 22.5 1 21.1569 1 19.5V6.5C1 4.84315 2.34315 3.5 4 3.5H6V2C6 1.44772 6.44772 1 7 1ZM17 5.5H7H4C3.44772 5.5 3 5.94772 3 6.5V19.5C3 20.0523 3.44772 20.5 4 20.5H20C20.5523 20.5 21 20.0523 21 19.5V6.5C21 5.94772 20.5523 5.5 20 5.5H17ZM6 16.3C6 15.8582 6.35817 15.5 6.8 15.5H7.2C7.64183 15.5 8 15.8582 8 16.3V16.7C8 17.1418 7.64183 17.5 7.2 17.5H6.8C6.35817 17.5 6 17.1418 6 16.7V16.3ZM11.8 15.5C11.3582 15.5 11 15.8582 11 16.3V16.7C11 17.1418 11.3582 17.5 11.8 17.5H12.2C12.6418 17.5 13 17.1418 13 16.7V16.3C13 15.8582 12.6418 15.5 12.2 15.5H11.8ZM6 12.3C6 11.8582 6.35817 11.5 6.8 11.5H7.2C7.64183 11.5 8 11.8582 8 12.3V12.7C8 13.1418 7.64183 13.5 7.2 13.5H6.8C6.35817 13.5 6 13.1418 6 12.7V12.3ZM11.8 11.5C11.3582 11.5 11 11.8582 11 12.3V12.7C11 13.1418 11.3582 13.5 11.8 13.5H12.2C12.6418 13.5 13 13.1418 13 12.7V12.3C13 11.8582 12.6418 11.5 12.2 11.5H11.8ZM16 12.3C16 11.8582 16.3582 11.5 16.8 11.5H17.2C17.6418 11.5 18 11.8582 18 12.3V12.7C18 13.1418 17.6418 13.5 17.2 13.5H16.8C16.3582 13.5 16 13.1418 16 12.7V12.3ZM6.8 7.5C6.35817 7.5 6 7.85817 6 8.3V8.7C6 9.14183 6.35817 9.5 6.8 9.5H7.2C7.64183 9.5 8 9.14183 8 8.7V8.3C8 7.85817 7.64183 7.5 7.2 7.5H6.8ZM11 8.3C11 7.85817 11.3582 7.5 11.8 7.5H12.2C12.6418 7.5 13 7.85817 13 8.3V8.7C13 9.14183 12.6418 9.5 12.2 9.5H11.8C11.3582 9.5 11 9.14183 11 8.7V8.3ZM16.8 7.5C16.3582 7.5 16 7.85817 16 8.3V8.7C16 9.14183 16.3582 9.5 16.8 9.5H17.2C17.6418 9.5 18 9.14183 18 8.7V8.3C18 7.85817 17.6418 7.5 17.2 7.5H16.8Z" fill="#140E17"/>
+                                            </mask>
+                                            <g mask="url(#mask0_216_4407)">
+                                            <rect width="24" height="24" fill="#140E17"/>
+                                            </g>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="select">
+                                <div class="select__header">
+                                    <span class="select__current">Time</span>
+                                    <div class="select__icon"></div>
+                                </div>
+                                <div class="select__body no-scroll">
+                                    <div class="select__item">12:00</div>
+                                    <div class="select__item">13:00</div>
+                                    <div class="select__item">14:00</div>
+                                    <div class="select__item">15:00</div>
+                                    <div class="select__item">16:00</div>
+                                    <div class="select__item">17:00</div>
+                                    <div class="select__item">18:00</div>
+                                    <div class="select__item">19:00</div>
+                                    <div class="select__item">20:00</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebar__add-team">
+                        <div class="flex-container">
+                            <h4>Add your team</h4>
+                            <div class="counter">
+                                <span>0</span><span>/</span><span>4</span>
+                            </div>
+                        </div>
+                        <div class="description">Invite people who interested in product</div>
+                        <input type="email" placeholder="Participant e-mail">
+                    </div>
+                    <button class="validateBtn" type="submit">Book a demo</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Popup -->
+    <div id="signUp" class="popup">
+        <a href="#case" class="popup__area"></a>
+        <div class="popup__body">
+            <div class="popup__content">
+                <div class="popup__container">
+                    <a href="#" class="tab-link">Sign Up</a>
+                    <a href="#" class="tab-link">Log In</a>
+                </div>
+                <form action="" method="get" class="formWithValidation">
+                    <div class="popup__form">
+                        <input class="name field" type="text" placeholder="First name*" name="name">
+                        <input class="name field" type="text" placeholder="Second name*" name="name">
+                        <input class="email field" type="email" placeholder="Email*" name="email" required>
+                        <input class="password field" type="password" placeholder="Password*" name="password" required>
+                        <label for="password" class="password-label">Use 8 or more characters with a mix of letters, numbers & symbols.</label>
+                        <input type="checkbox" class="custom-checkbox" id="checkbox" name="checkbox" value="yes">
+                        <label for="checkbox" class="checkbox-label">I agree with the Terms of Use</label>
+                        <button class="validateBtn" type="submit">Join now</button>
+                        <span>Or sign up with</span>
+                        <div class="pop-up-container">
+                            <a href="#" class="google-link">
+                                <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <mask id="mask0_256_1228" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="5" y="5" width="31" height="30">
+                                    <path d="M5.5 20C5.5 22.5723 6.14699 24.9929 7.28764 27.1085C9.82117 31.8072 14.7881 35 20.5004 35C24.0551 35 27.3205 33.7637 29.891 31.6975C32.5341 29.5728 34.4421 26.5703 35.1723 23.1318C35.3874 22.1214 35.5003 21.0738 35.5003 19.9999C35.5003 19.0422 35.4105 18.1051 35.2382 17.1978H20.8301V23.1318H28.851C28.129 25.0588 26.7584 26.6684 25.0045 27.6969C23.6834 28.4725 22.1438 28.9168 20.5004 28.9168C16.6771 28.9168 13.4154 26.5102 12.1486 23.1294C11.7827 22.1561 11.5833 21.1011 11.5831 20C11.5831 18.9855 11.7529 18.0105 12.0645 17.1022C13.2678 13.6003 16.5897 11.0832 20.4996 11.0832C22.2311 11.0832 23.8474 11.5769 25.2147 12.4316L30.074 8.45328C27.4762 6.29645 24.1391 5 20.4996 5C14.7023 5 9.67363 8.2885 7.17719 13.1017C6.10492 15.1671 5.5 17.5127 5.5 20Z" fill="#A24DE8"/>
+                                    </mask>
+                                    <g mask="url(#mask0_256_1228)">
+                                    <rect x="0.5" width="40" height="40" fill="#A24DE8"/>
+                                    </g>
+                                </svg>
+                                Sign in with Google
+                            </a>
+                            <div class="icon"></div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="logIn" class="popup">
+        <a href="#case" class="popup__area"></a>
+        <div class="popup__body">
+            <div class="popup__content">
+                <div class="popup__container">
+                    <a href="#" class="tab-link">Sign Up</a>
+                    <a href="#" class="tab-link">Log In</a>
+                </div>
+                <form action="" method="get" class="formWithValidation">
+                    <div class="popup__form">
+                        <input class="email field" type="email" placeholder="Email*" name="email" required>
+                        <input class="password field" type="password" placeholder="Password*" name="password" required>
+                        <a href="#" class="link">I forgot my password</a>
+                        <button class="continue-btn" type="submit">Continue</button>
+                        <span>Or sign up with</span>
+                        <div class="pop-up-container">
+                            <a href="#" class="google-link">
+                                <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <mask id="mask0_256_1228" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="5" y="5" width="31" height="30">
+                                    <path d="M5.5 20C5.5 22.5723 6.14699 24.9929 7.28764 27.1085C9.82117 31.8072 14.7881 35 20.5004 35C24.0551 35 27.3205 33.7637 29.891 31.6975C32.5341 29.5728 34.4421 26.5703 35.1723 23.1318C35.3874 22.1214 35.5003 21.0738 35.5003 19.9999C35.5003 19.0422 35.4105 18.1051 35.2382 17.1978H20.8301V23.1318H28.851C28.129 25.0588 26.7584 26.6684 25.0045 27.6969C23.6834 28.4725 22.1438 28.9168 20.5004 28.9168C16.6771 28.9168 13.4154 26.5102 12.1486 23.1294C11.7827 22.1561 11.5833 21.1011 11.5831 20C11.5831 18.9855 11.7529 18.0105 12.0645 17.1022C13.2678 13.6003 16.5897 11.0832 20.4996 11.0832C22.2311 11.0832 23.8474 11.5769 25.2147 12.4316L30.074 8.45328C27.4762 6.29645 24.1391 5 20.4996 5C14.7023 5 9.67363 8.2885 7.17719 13.1017C6.10492 15.1671 5.5 17.5127 5.5 20Z" fill="#A24DE8"/>
+                                    </mask>
+                                    <g mask="url(#mask0_256_1228)">
+                                    <rect x="0.5" width="40" height="40" fill="#A24DE8"/>
+                                    </g>
+                                </svg>
+                                Sign in with Google
+                            </a>
+                            <div class="icon"></div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+<!-- ____________________________________________ -->
+
+    <section class="case">
+        <div class="content">
+            <div class="big-image"></div>
+            <div class="case-container">
+                <h2>New NFT experience in the CollectiveWEB Metaverse space</h2>
+                <h4>Art needs an audience!</h4>
+                <p>
+                    While guests were gathering at the hall of the WOW summit — the biggest event
+                    of the uprising industries and technologies, such as NFTs, GameFi, Blockchain
+                    and Metaverse, the CollectiveWEB team was busy in the pre-run of the summit's
+                    virtual exhibition.<br><br>
+                    The virtual exhibition appeared as a gracefully rendered 3D gallery space,
+                    located in the meta Dubai, allowing everyone around the world to dive into
+                    the latest and the most hyped form of art tech — the NFTs. The virtual
+                    gallery exhibited 38 carefully selected works (ready to be explored, discussed and purchased)
+                    created by 28 artists (including newly discovered and the Internet favourites).<br><br>
+                    Every corner of the meta venue was polished, the meta Burj Khalifa was looking as magnifique as the original,
+                    the masterpieces were installed and the video avatars of our precious worldwide guests started to gather around the art.<br><br>
+                    4 days in metaverse equals 4 days in real life, and the WOW virtual exhibition, as well as the WOW summit was coming to an end.
+                    More than 1400 collectors, investors and enthusiasts have joined the CollectiveWEB metaverse to explore the WOW summit NFT gallery.
+                </p>
+                <a href="https://www.collectiveweb.com/companies/WOW%20Summit/landing" target="_blank" class="link">view case</a>
+            </div>
+        </div>
+    </section>
+    <section class="third-screen">
+        <div class="content">
+            <h2>CollectiveWEB offers</h2>
+            <div class="cards-container">
+                <div class="card img-1">
+                    <div class="info">
+                        <h4>Virtual twin</h4>
+                        <p>
+                            The metaverse is borderless! Your brand’s
+                            virtual twin will provide global, accessible experience for everyone
+                        </p>
+                    </div>
+                </div>
+                <div class="card img-2">
+                    <div class="info">
+                        <h4>Web3 presence</h4>
+                        <p>
+                            New chapter of the Internet is the new chapter of your brand.
+                            Join the Web3 era through the virtual space, powered by CollectiveWEB
+                        </p>
+                    </div>
+                </div>
+                <div class="card img-3">
+                    <div class="info">
+                        <h4>New form of communication</h4>
+                        <p>
+                            Real through virtual. Attract new customers and
+                            increase the CTR by 30% with the latest communication format
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="book-a-demo">
+        <div class="background-image">
+            <div class="content">
+                <div class="book-a-demo-container">
+                    <h2>Book a Demo</h2>
+                    <p>
+                        Your journey into the metaverse starts here!
+                        Please fill in the form and we'll arrange a full guided demo for you.
+                    </p>
+                    <a href="#sidebar">book a demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="trusted-by">
+        <div class="content"><h2>Trusted by</h2></div>
+        <div class="background"></div>
+    </section>
+    <section class="reviews">
+        <div class="content">
+            <h2>Reviews</h2>
+        </div>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="review-card">
+                        <p>
+                            «The whole collaboration was a win-win.
+                            Our project resulted in doubling the amount of attendees,
+                            we’ve received good feedback from a whole bunch of guests
+                            about the one-of-a-kind experience they’ve had, and the emails
+                            are still coming! Great job, what else to say.»
+                        </p>
+                        <div class="info">
+                            <div class="image wow"></div>
+                            <h5>WoW Summit metaverse</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="review-card">
+                        <p>
+                            «We were impressed by the teams’ creativity,
+                            dedication and attention to details.
+                            Looking forward for the future projects.»
+                        </p>
+                        <div class="info">
+                            <div class="image paysenger"></div>
+                            <h5>Paysenger</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="review-card">
+                        <p>
+                            «I’ve said it before and I'll say it again.
+                            Forget everything you heard about the metaverse.
+                            This is a real game-changer in the industry,
+                            the most advanced platform you can possibly get!!
+                            Thank you all for doing what you’re doing and for
+                            what you’ve done for Inder.»
+                        </p>
+                        <div class="info">
+                            <div class="image pixelynx"></div>
+                            <h5>Pixelynx</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="content">
+            <div class="top">
+                <div class="logo"></div>
+                <h2>Contact us</h2>
+                <div class="info">
+                    <a href="mailto:info@collectiveweb.com">info@collectiveweb.com</a>
+                    <a href="tel:+1(646)2209966">+1 (646) 220 99 66</a>
+                    <span>3101 Park Blvd, Palo Alto, CA 94306</span>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="left">
+                    <h5>Follow us</h5>
+                    <div class="link-list">
+                        <a href="https://www.instagram.com/collective_web/" target="_blank" class="link instagram"></a>
+                        <a href="https://www.facebook.com/collectiveweb.metaverse" target="_blank" class="link facebook"></a>
+                        <a href="https://www.linkedin.com/company/collectiveweb/" target="_blank" class="link linkedin"></a>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="list">
+                        <div class="column">
+                            <a href="#" class="list-item">NFT</a>
+                            <a href="#" class="list-item">Retail</a>
+                            <a href="#" class="list-item">Enterprise</a>
+                        </div>
+                        <div class="column">
+                            <a href="#" class="list-item">How it works</a>
+                            <a href="#" class="list-item">Who it's for</a>
+                            <a href="#" class="list-item">Pricing</a>
+                        </div>
+                        <div class="column">
+                            <a href="#" class="list-item">Why us</a>
+                            <a href="#" class="list-item">Blog</a>
+                            <a href="#" class="list-item">More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-container">
+                <span>© CollectiveWEB</span>
+                <a href="#" class="link">Privacy Policy</a>
+                <a href="#">Terms of use</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        effect: 'cards',
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+        });
+    </script>
+    <script src="../sidebar/js/select.js"></script>
+    <script src="../sidebar/js/jquery-3.2.1.min.js"></script>
+    <script src="../sidebar/js/moment-with-locales.min.js"></script>
+    <script src="../sidebar/js/bootstrap.min.js"></script>
+    <script src="../sidebar/js/bootstrap-datetimepicker.min.js"></script>
+    <script>
+        $(function () {
+            $('#datetimepicker1').datetimepicker(
+                {
+                    locale: 'en',
+                    format: 'DD.MM.YYYY'
+             });
+        });
+    </script>
+    <script src="js/show-menu.js"></script>
+    <script src="js/buttons.js"></script>
+</body>
+</html>
